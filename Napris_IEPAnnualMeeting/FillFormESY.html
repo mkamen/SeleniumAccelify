@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://change-this-to-the-site-you-are-testing/" />
+<title>FillFormESY</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FillFormESY</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>//table[@id='pnlEventMenu']//span[@data-sectionname='ESY']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//span[@class='js-form-field-value SignificantKey']//span[contains(text(),'Yes')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//span[@class='js-form-field-value DataSourcesESYCheckBoxList']//label[contains(text(),'Current District and State Assessments')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//span[@class='js-form-field-value DataSourcesESYCheckBoxList']//label[contains(text(),'Results of Most Recent Evaluation')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//span[@class='js-form-field-value EmergingKey']//span[contains(text(),'No')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//span[@class='js-form-field-value BehaviorsKey']//span[contains(text(),'No')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//span[@class='js-form-field-value PreviouslyKey']//span[contains(text(),'No')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnUpdateForm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pnlFormConfirm</td>
+	<td>Form has been updated successfully.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
