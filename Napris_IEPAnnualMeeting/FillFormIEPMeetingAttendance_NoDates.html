@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dade.acceliqc.com/" />
+<title>FillFormIEPMeetingAttendance_NoDates</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FillFormIEPMeetingAttendance_NoDates</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>//table[@id='pnlEventMenu']//span[@data-sectionname='IEP Meeting Attendance']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//select[@field-title='LEA Representative']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//body//div[@class='k-animation-container'][1]//span/input@aria-owns</td>
+	<td>LEARepresentativField_ID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${LEARepresentativField_ID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul [@id='${LEARepresentativField_ID}']/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//select[@field-title='Special Education Teacher']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//body//div[@class='k-animation-container'][2]//span/input@aria-owns</td>
+	<td>SpecialteacherField_ID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${SpecialteacherField_ID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul [@id='${SpecialteacherField_ID}']/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//select[@field-title='General Education Teacher']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//body//div[@class='k-animation-container'][3]//span/input@aria-owns</td>
+	<td>GeneralTeacherField_ID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${GeneralTeacherField_ID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul [@id='${GeneralTeacherField_ID}']/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmFormDetails']//select[@field-title='Evaluation Specialist']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//body//div[@class='k-animation-container'][4]//span/input@aria-owns</td>
+	<td>EvaluationSpecialistField_ID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${EvaluationSpecialistField_ID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul [@id='${EvaluationSpecialistField_ID}']/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnUpdateForm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pnlFormConfirm</td>
+	<td>Form has been updated successfully.</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
