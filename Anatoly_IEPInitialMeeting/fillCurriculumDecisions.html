@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://dade.acceliqc.com" />
+<title>Curriculum Decisions</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Curriculum Decisions</td></tr>
+</thead><tbody>
+<tr>
+	<td>clickAndWait</td>
+	<td>//table[@id='pnlEventMenu']//span[@data-sectionname='Present Levels']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value DoesTheStudentHaveASignificantCognitiveDisability']//span[text()='Yes']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value EvenWithAppropriateAndAllowableInstructionalAccommodations']//span[text()='Yes']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value WillTheStudentRequireDirectInstructionInAcademicAreas']//span[text()='Yes']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value WillTheStudentBeUtilizingAnyCAPEDigitalTools']//span[text()='Yes']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value CAPEIndustryCertificationsLookup']//input[@class='k-input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value CAPEIndustryCertificationsLookup']//input[@class='k-input']@aria-owns</td>
+	<td>varCertifications</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${varCertifications}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id=substring-after(${varCertifications},'taglist ')]/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@class='js-form-field-value CAPEDigitalToolsLookup']//input[@class='k-input']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeAttribute</td>
+	<td>//span[@class='js-form-field-value CAPEDigitalToolsLookup']//input[@class='k-input']@aria-owns</td>
+	<td>varTools</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${varTools}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id=substring-after(${varTools},'taglist ')]/li</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnUpdateForm</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
