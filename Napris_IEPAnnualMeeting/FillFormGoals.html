@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://change-this-to-the-site-you-are-testing/" />
+<title>FillFormGoals</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">FillFormGoals</td></tr>
+</thead><tbody>
+<tr>
+	<td>click</td>
+	<td>//table[@id='pnlEventMenu']//span[@data-sectionname='Goals']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>15000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>GOAL_1********************************************************************************</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Create</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmCreateGoal']//span[@aria-owns='DomainId_listbox']/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='DomainId_listbox']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@aria-owns='DomainPenId_listbox']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='DomainPenId_listbox']/li[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@aria-owns='GoalDefinitionIds_taglist GoalDefinitionIds_listbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='GoalDefinitionIds_listbox']/li[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnSaveGoal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//select[@id='MeasuredByIds']/../div</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='MeasuredByIds_listbox']/li[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='pnlGoals']/div[1]//span[contains(text(), 'Evaluation Procedures')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=GoalEvaluationProcedure_IsClinicialTallies</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//span[@aria-owns='GoalEvaluationProcedure_HowOftenId_listbox']/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='GoalEvaluationProcedure_HowOftenId_listbox']/li[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnUpdateGoal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>id=pnlGoalConfirm</td>
+	<td>Goal has been updated successfully.</td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>GOAL_2********************************************************************************</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Create')])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmCreateGoal']//span[@aria-owns='DomainId_listbox']/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='DomainId_listbox']/li[3])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//span[@aria-owns='DomainPenId_listbox']/span)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='DomainPenId_listbox']/li[1])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@aria-owns='GoalDefinitionIds_taglist GoalDefinitionIds_listbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='GoalDefinitionIds_listbox']/li[3])[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnSaveGoal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//form[@id='frmUpdateGoal']//select[@id='MeasuredByIds']/../div)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='MeasuredByIds_listbox']/li[1])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='pnlGoals']/div[2]//span[contains(text(), 'Evaluation Procedures')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='GoalEvaluationProcedure_IsClinicialTallies'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//span[@aria-owns='GoalEvaluationProcedure_HowOftenId_listbox']/span)[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='GoalEvaluationProcedure_HowOftenId_listbox']/li[2])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[@id='btnUpdateGoal'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//div[@id='pnlGoalConfirm'])[2]</td>
+	<td>Goal has been updated successfully.</td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>GOAL_3********************************************************************************</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Create')])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmCreateGoal']//span[@aria-owns='DomainId_listbox']/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='DomainId_listbox']/li[4])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//span[@aria-owns='DomainPenId_listbox']/span)[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='DomainPenId_listbox']/li[1])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@aria-owns='GoalDefinitionIds_taglist GoalDefinitionIds_listbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='GoalDefinitionIds_listbox']/li[4])[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnSaveGoal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//form[@id='frmUpdateGoal']//select[@id='MeasuredByIds']/../div)[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='MeasuredByIds_listbox']/li[1])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='pnlGoals']/div[3]//span[contains(text(), 'Evaluation Procedures')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='GoalEvaluationProcedure_IsClinicialTallies'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//span[@aria-owns='GoalEvaluationProcedure_HowOftenId_listbox']/span)[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='GoalEvaluationProcedure_HowOftenId_listbox']/li[2])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[@id='btnUpdateGoal'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//div[@id='pnlGoalConfirm'])[3]</td>
+	<td>Goal has been updated successfully.</td>
+</tr>
+<tr>
+	<td>refresh</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForPageToLoad</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>GOAL_4********************************************************************************</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'Create')])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmCreateGoal']//span[@aria-owns='DomainId_listbox']/span[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='DomainId_listbox']/li[5])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//span[@aria-owns='DomainPenId_listbox']/span)[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='DomainPenId_listbox']/li[1])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//input[@aria-owns='GoalDefinitionIds_taglist GoalDefinitionIds_listbox']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='GoalDefinitionIds_listbox']/li[6])[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=btnSaveGoal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//form[@id='frmUpdateGoal']//select[@id='MeasuredByIds']/../div)[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='MeasuredByIds_listbox']/li[1])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='pnlGoals']/div[2]//span[contains(text(), 'Evaluation Procedures')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//input[@id='GoalEvaluationProcedure_IsClinicialTallies'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//span[@aria-owns='GoalEvaluationProcedure_HowOftenId_listbox']/span)[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='GoalEvaluationProcedure_HowOftenId_listbox']/li[2])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[@id='btnUpdateGoal'])[4]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>xpath=(//div[@id='pnlGoalConfirm'])[4]</td>
+	<td>Goal has been updated successfully.</td>
+</tr>
+</tbody></table>
+</body>
+</html>
